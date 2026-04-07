@@ -18,11 +18,23 @@ a {
     text-decoration: none;
 }
 
+.a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
 .resumelistheading {
     font-weight: bold;
     font-style: normal;
 }
 
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
 
 .justify{
     text-align: justify;
@@ -45,14 +57,17 @@ a {
 .box1 {
     border-width: 1px;
     border-style: solid;
+    border-color: seagreen;
+
+    /* border: 1px solid green; */
 }
 
 
 .box2{
-
+    padding: 5px;
 }
 
 
 .box3 {
-
+    margin: 50px;
 }
