@@ -11214,17 +11214,14 @@ body {
   letter-spacing: 0.1rem;
 }
 
+/* ===== FIX MASTHEAD BACKGROUND ===== */
 .masthead {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  padding: 15rem 0;
-  background:
+  background-image: 
     linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%),
-    url("../assets/bg-masthead.jpg");
+    url("/assets/bg-masthead.jpg") !important;
+
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll;
   background-size: cover;
 }
 
