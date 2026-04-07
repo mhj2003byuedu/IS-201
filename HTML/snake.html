@@ -24,6 +24,11 @@
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .nav-box a:hover {
+            text-decoration: underline;
         }
 
         .game-wrapper {
@@ -39,6 +44,7 @@
         h1 {
             color: #7a3e00;
             margin-top: 0;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         .instructions {
@@ -58,6 +64,7 @@
             border: 3px solid #2f4858;
             display: block;
             margin: 0 auto 20px auto;
+            max-width: 100%;
         }
 
         .button-row {
@@ -72,6 +79,7 @@
             margin: 0 8px;
             font-size: 16px;
             cursor: pointer;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         button:hover {
@@ -81,15 +89,31 @@
         .note {
             margin-top: 20px;
             font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .controls {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555555;
+        }
+
+        @media (max-width: 500px) {
+            .nav-box a {
+                display: inline-block;
+                margin: 8px 10px;
+            }
+
+            button {
+                margin: 6px 4px;
+                width: 140px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="nav-box">
-        <a href="../index.html">Home</a>
-        <a href="../HTML/resume.html">Resume</a>
-        <a href="../HTML/aboutme.html">About Me</a>
-        <a href="../HTML/scratch.html">Scratch Page</a>
+        <a href="scratch.html">Back to Scratch Page</a>
     </div>
 
     <div class="game-wrapper">
@@ -97,7 +121,7 @@
 
         <p class="instructions">
             Use the arrow keys to move the snake. Eat the red food to grow longer.
-            Don't hit the wall or your own tail.
+            Do not hit the wall or your own tail.
         </p>
 
         <div id="score">Score: 0</div>
@@ -109,8 +133,11 @@
             <button onclick="restartGame()">Restart Game</button>
         </div>
 
+        <p class="controls">Controls: Arrow Keys</p>
+
         <p class="note">
-            This page is a single-file app with its HTML, CSS, and JavaScript all in one page.
+            This page is a self-contained web app with its HTML, CSS, and JavaScript
+            all written in one file.
         </p>
     </div>
 
@@ -130,19 +157,27 @@
         let gameRunning = false;
 
         function initializeGame() {
-            snake = [
-                { x: 9 * box, y: 10 * box }
-            ];
-
+            snake = [{ x: 9 * box, y: 10 * box }];
             direction = "RIGHT";
 
+            createFood();
+
+            score = 0;
+            scoreDisplay.textContent = "Score: " + score;
+        }
+
+        function createFood() {
             food = {
                 x: Math.floor(Math.random() * 20) * box,
                 y: Math.floor(Math.random() * 20) * box
             };
 
-            score = 0;
-            scoreDisplay.textContent = "Score: " + score;
+            while (collision(food.x, food.y, snake)) {
+                food = {
+                    x: Math.floor(Math.random() * 20) * box,
+                    y: Math.floor(Math.random() * 20) * box
+                };
+            }
         }
 
         function drawBackground() {
@@ -152,13 +187,9 @@
 
         function drawSnake() {
             for (let i = 0; i < snake.length; i++) {
-                if (i === 0) {
-                    ctx.fillStyle = "#2f4858";
-                } else {
-                    ctx.fillStyle = "#7a9e9f";
-                }
-
+                ctx.fillStyle = i === 0 ? "#2f4858" : "#7a9e9f";
                 ctx.fillRect(snake[i].x, snake[i].y, box, box);
+
                 ctx.strokeStyle = "#ffffff";
                 ctx.strokeRect(snake[i].x, snake[i].y, box, box);
             }
@@ -191,16 +222,12 @@
                 return;
             }
 
-            let newHead = { x: snakeX, y: snakeY };
+            const newHead = { x: snakeX, y: snakeY };
 
             if (snakeX === food.x && snakeY === food.y) {
                 score++;
                 scoreDisplay.textContent = "Score: " + score;
-
-                food = {
-                    x: Math.floor(Math.random() * 20) * box,
-                    y: Math.floor(Math.random() * 20) * box
-                };
+                createFood();
             } else {
                 snake.pop();
             }
