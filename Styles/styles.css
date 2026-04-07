@@ -36,6 +36,12 @@ a {
     background-repeat: no-repeat;
 }
 
+.aboutbg {
+    background-image: url('../Images/phm.jpg');
+    background-position: top left;
+    background-size: 200%
+}
+
 .box1 {
     border-width: 1px;
     border-style: solid;
