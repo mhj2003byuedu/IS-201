@@ -3,12 +3,30 @@ body {
             font-size: 15px;
             color: rgb(0, 255, 255);
         }
-            li {
-                font-size: 14px;
-                font-style: italic;
-                color: rgb(76, 0, 255);
-                font-weight: normal;
-            }
-.bold {
+
+
+li {
+    font-size: 14px;
+    font-style: italic;
+    color: rgb(76, 0, 255);
+    font-weight: normal;
+}
+
+
+.resumelistheading {
     font-weight: bold;
+    font-style: normal;
+}
+
+
+.justify{
+    text-align: justify;
+}
+
+
+.homebg{
+    background-image: url('../Images/HDII\ 1.jpg');
+    background-position: top left;
+    background-size: 200%;
+    background-repeat: no-repeat;
 }
