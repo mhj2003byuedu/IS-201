@@ -9,29 +9,24 @@ IS 201 W2026
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
     <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="../Styles/layout.css">
 </head>
 <body>
-    <a href="../index.html" id="top">Home</a> | 
-    <a href="#">Resume</a> | 
-    <a href="../HTML/aboutme.html">About Me</a><br><br>
+    <div class="common header">
+        <img src="../Images/profile.jpg" height="200" alt="Profile Picture">
+        <a href="../index.html" id="top">Home</a> | 
+        <a href="#">Resume</a> | 
+        <a href="../HTML/aboutme.html">About Me</a>
+    </div>
+
+    <div class="common leftmenu">
+        <a href="#edu">Education</a><br>
+        <a href="#exp">Experience</a><br>
+        <a href="#ski">Skills</a><br>
+    </div>
     
-    <a href="#edu">Education</a><br>
-    <a href="#exp">Experience</a><br>
-    <a href="#ski">Skills</a><br>
-
-    <br>
-    <img src="../Images/profile.jpg" height="200" alt="Profile Picture">
-    <h1>Mo Jansson's Resume</h1>
-
-    Live Show Host <br>
-    Sew Sweet Minky Designs <br>
-    Springville, UT, 84663
-
-    <p>
-        <a href="https://www.linkedin.com/in/mo-jansson-9106b835b/" target="_blank" title="Mo Jansson's LinkedIn Page">My LinkedIn Profile</a>
-    </p>
-
-     <p class="justify"><span class="bold">Mission Statement:</span> My goal is to do no harm, but take no crap.Mission Statement: My goal is to do no harm, but take no crap.Mission Statement: My goal is to do no harm, but take no crap.Mission Statement: My goal is to do no harm, but take no crap.Mission Statement: My goal is to do no harm, but take no crap.Mission Statement: My goal is to do no harm, but take no crap.Mission Statement: My goal is to do no harm, but take no crap.Mission Statement: My goal is to do no harm, but take no crap.</p>
+    <div class="common mainbody">
+        <p class="justify"><span class="bold">Mission Statement:</span> My goal is to do no harm, but take no crap.Mission Statement: My goal is to do no harm, but take no crap.Mission Statement: My goal is to do no harm, but take no crap.Mission Statement: My goal is to do no harm, but take no crap.Mission Statement: My goal is to do no harm, but take no crap.Mission Statement: My goal is to do no harm, but take no crap.Mission Statement: My goal is to do no harm, but take no crap.Mission Statement: My goal is to do no harm, but take no crap.</p>
 
      <ol>
         <li id="edu" class="resumelistheading underline">Education
@@ -62,6 +57,7 @@ IS 201 W2026
                 <li>Problem Solving</li>
             </ul>
             <a href="#top">Back to Top</a>
+            <!-- <p>&nbsp;</p>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
@@ -102,9 +98,24 @@ IS 201 W2026
             <p>&nbsp;</p>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
+            <p>&nbsp;</p> -->
         </li>
      </ol>
+    </div>
+    
+    <div class="common rightmenu">
+        <h1>Mo Jansson's Resume</h1>
+        Live Show Host <br>
+        Sew Sweet Minky Designs <br>
+        Springville, UT, 84663
+        <p>
+            <a href="https://www.linkedin.com/in/mo-jansson-9106b835b/" target="_blank" title="Mo Jansson's LinkedIn Page">My LinkedIn Profile</a>
+        </p>
+    </div>
+    
+    <div class="common footer">
+        www.mywebsitename.com | &copy; 2026 Mo Jansson
+    </div>
+
 </body>
 </html>
