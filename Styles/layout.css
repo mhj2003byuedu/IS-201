@@ -1,11 +1,11 @@
 body {
-    background-color: #555555;
+    background-color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
 .common {
-    background-color: #cccccc;
+    /* background-color: #cccccc; */
     border: 2px solid white;
     position: absolute;
 }
@@ -16,6 +16,8 @@ body {
     left: 5px;
     right: 5px;
     height: 100px;
+    z-index: 2;
+    border-bottom: solid 1px #555555;
 }
 
 
@@ -24,6 +26,8 @@ body {
     left: 5px;
     width: 100px;
     bottom: 39px;
+    z-index: 1;
+    border-right: solid 1px #555555;
 }
 
 
@@ -32,6 +36,7 @@ body {
     left: 114px;
     right: 114px;
     bottom: 39px;
+    padding-right: 5px;
 }
 
 
@@ -40,6 +45,8 @@ body {
     right: 5px;
     width: 100px;
     bottom: 39px;
+    border-left: solid 1px #555555;
+    padding-left: 5px;
 }
 
 .footer {
@@ -47,4 +54,9 @@ body {
     right: 5px;
     bottom: 5px;
     height: 25px;
+    position: fixed;
+}
+
+.subheader {
+    float: right;
 }

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratch Page</title>
+    <link rel="stylesheet" href="../Styles/scratch.css">
+</head>
+<body>
+    <div class="nav-box" id="top">
+        <a href="../index.html">Home</a>
+        <a href="../HTML/resume.html">Resume</a>
+        <a href="../HTML/aboutme.html">About Me</a>
+    </div>
+
+    <div class="hero-box">
+        <h1>My Scratch Page</h1>
+        <p>
+            This page was built with zero Bootstrap content and includes all of the required
+            scratch-page elements.
+        </p>
+        <a class="jump-link" href="#tableau-section">Jump to the Tableau Graph</a>
+    </div>
+
+    <div class="content-box">
+        <h2>Favorite Things About Project Hail Mary</h2>
+
+        <ol>
+            <li>
+                The Story
+                <ul>
+                    <li>Creative science concepts</li>
+                    <li>Suspense and mystery</li>
+                    <li>Great character growth</li>
+                </ul>
+            </li>
+            <li>
+                The Characters
+                <ul>
+                    <li>Ryland Grace</li>
+                    <li>Rocky</li>
+                    <li>Stratt</li>
+                </ul>
+            </li>
+            <li>
+                Why I Like It
+                <ul>
+                    <li>It is emotional</li>
+                    <li>It is funny</li>
+                    <li>It makes science feel exciting</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div class="media-box">
+        <div class="image-panel">
+            <h2>Featured Image</h2>
+            <img src="../Images/profile.jpg" alt="Profile picture" class="featured-image">
+            <p>This image is local to the site and is not from Bootstrap.</p>
+        </div>
+
+        <div class="video-panel">
+            <h2>YouTube Video</h2>
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/fL4HnHn9sWc"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+            <p>This embedded video will work once the site is hosted online.</p>
+        </div>
+    </div>
+
+    <div class="tableau-box" id="tableau-section">
+        <h2>Interactive Tableau Graph</h2>
+        <p>
+            This is a live Tableau visualization, not just a picture.
+        </p>
+
+        <div class='tableauPlaceholder' id='viz1680000000000' style='position: relative'>
+            <noscript>
+                <a href='#'>
+                    <img alt='Sample Superstore Dashboard'
+                         src='https://public.tableau.com/static/images/Sa/SampleSuperstoredashboard/SuperStoreDashboard/1.png'
+                         style='border: none' />
+                </a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='SampleSuperstoredashboard/SuperStoreDashboard' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https://public.tableau.com/static/images/Sa/SampleSuperstoredashboard/SuperStoreDashboard/1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+            </object>
+        </div>
+
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1680000000000');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width = '100%';
+            vizElement.style.height = '827px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+
+        <p><a class="jump-link" href="#top">Back to Top</a></p>
+    </div>
+</body>
+</html>
