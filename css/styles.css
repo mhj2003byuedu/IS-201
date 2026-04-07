@@ -11201,3 +11201,118 @@ body {
 .footer {
   padding: 5rem 0;
 }
+
+
+/* ==================================================
+   Custom Site Overrides for Mo Jansson
+   Additions below the original Grayscale theme
+   ================================================== */
+
+.masthead h1 {
+  letter-spacing: 0.1rem;
+}
+
+.masthead h2 {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-section img {
+  max-width: 300px;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+}
+
+.projects-section h3,
+.projects-section h4 {
+  font-weight: 700;
+}
+
+.projects-section ul {
+  padding-left: 1.25rem;
+}
+
+.projects-section li {
+  margin-bottom: 0.5rem;
+}
+
+.featured-text {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.contact-section .card {
+  border: 0;
+  border-radius: 0.5rem;
+}
+
+.contact-section .card-body a {
+  color: #64a19d;
+  text-decoration: none;
+}
+
+.contact-section .card-body a:hover {
+  text-decoration: underline;
+}
+
+.social a {
+  transition: transform 0.2s ease;
+}
+
+.social a:hover {
+  transform: translateY(-2px);
+}
+
+.footer {
+  letter-spacing: 0.03rem;
+}
+
+/* Internal page header styling */
+.internal-header {
+  background-color: #212529;
+  color: #fff;
+  text-align: center;
+  padding: 130px 0 60px 0;
+}
+
+.internal-header img {
+  max-width: 140px;
+}
+
+.internal-header p {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Resume page image consistency */
+.resume-section-image {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Small screen adjustments */
+@media (max-width: 991.98px) {
+  .masthead h1 {
+    font-size: 3rem;
+  }
+
+  .masthead h2 {
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .internal-header {
+    padding: 120px 0 50px 0;
+  }
+
+  .featured-text {
+    text-align: center !important;
+    border-left: 0 !important;
+    padding-left: 0 !important;
+  }
+}
