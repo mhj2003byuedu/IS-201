@@ -11290,3 +11290,60 @@ body {
 .resume-text-block ul {
   padding-left: 0.75rem !important;
 }
+
+/* Resume page specific fixes */
+.resume-section-image {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+}
+
+.resume-text-block {
+  padding: 0;
+  margin: 0;
+}
+
+.skills-block,
+.experience-block {
+  border-left: 6px solid #64a19d;
+  padding-left: 0.75rem;
+}
+
+.skills-block h3,
+.experience-block h3 {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.skills-block ul,
+.experience-block ul {
+  margin: 0;
+  padding-left: 1rem;
+  text-align: left;
+}
+
+.skills-block li,
+.experience-block li {
+  margin-bottom: 0.5rem;
+}
+
+/* Move the Skills block farther left to line up better with the lower image */
+#education .col-lg-8 {
+  padding-left: 0.25rem;
+}
+
+#education .skills-block {
+  max-width: 420px;
+}
+
+/* Keep spacing clean on mobile too */
+@media (max-width: 991.98px) {
+  #education .col-lg-8,
+  #experience .col-lg-8 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
