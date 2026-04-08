@@ -11361,3 +11361,8 @@ body {
 .experience-block {
   border-left: none !important;
 }
+
+/* Kill any leftover theme borders */
+.featured-text {
+  border-left: none !important;
+}
