@@ -11355,3 +11355,9 @@ body {
 #education .skills-block h3 {
   margin-bottom: 1rem;
 }
+
+/* REMOVE blue vertical bars */
+.skills-block,
+.experience-block {
+  border-left: none !important;
+}
