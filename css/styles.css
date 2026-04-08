@@ -11306,12 +11306,6 @@ body {
   margin: 0;
 }
 
-.skills-block,
-.experience-block {
-  border-left: 6px solid #64a19d;
-  padding-left: 0.75rem;
-}
-
 .skills-block h3,
 .experience-block h3 {
   margin-bottom: 1rem;
