@@ -11347,3 +11347,17 @@ body {
     padding-right: 0.75rem;
   }
 }
+
+/* Resume page alignment fixes */
+#education .skills-block {
+  max-width: 420px;
+}
+
+#education .skills-block ul {
+  padding-left: 1.1rem;
+  margin-bottom: 0;
+}
+
+#education .skills-block h3 {
+  margin-bottom: 1rem;
+}
