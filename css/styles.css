@@ -11203,3 +11203,37 @@ body {
 .footer {
   padding: 5rem 0;
 }
+
+/* Resume page layout fixes */
+.resume-section-image {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+}
+
+.resume-text-block {
+  padding: 1rem 1.5rem;
+}
+
+.resume-text-block h3 {
+  margin-bottom: 1rem;
+}
+
+.resume-text-block ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  text-align: left;
+}
+
+.resume-text-block li {
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 992px) {
+  .resume-text-block {
+    padding: 1rem 2rem;
+  }
+}
