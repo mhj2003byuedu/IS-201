@@ -11237,3 +11237,51 @@ body {
     padding: 1rem 2rem;
   }
 }
+
+/* Align Skills list with image below */
+#education .resume-text-block {
+  padding-left: 0;
+}
+
+#education .resume-text-block ul {
+  padding-left: 1rem;
+}
+
+/* ================================
+   Resume Page Fixes (ADD THIS)
+   ================================ */
+
+/* Image sizing + alignment */
+.resume-section-image {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  display: block;
+  margin: 0; /* remove auto-centering */
+  border-radius: 0.5rem;
+}
+
+/* Text block spacing */
+.resume-text-block {
+  padding: 1rem 1.5rem;
+}
+
+/* Fix bullet alignment */
+.resume-text-block ul {
+  margin: 0;
+  padding-left: 1rem; /* adjust this value */
+  text-align: left;
+}
+
+.resume-text-block li {
+  margin-bottom: 0.5rem;
+}
+
+/* 🔥 KEY FIX: Align skills with image below */
+#education .resume-text-block {
+  padding-left: 0;
+}
+
+#education .resume-text-block ul {
+  padding-left: 0.75rem; /* tweak between 0.5–1rem if needed */
+}
