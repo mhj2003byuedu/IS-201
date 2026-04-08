@@ -11285,3 +11285,8 @@ body {
 #education .resume-text-block ul {
   padding-left: 0.75rem; /* tweak between 0.5–1rem if needed */
 }
+
+/* Override Bootstrap list padding specifically for resume */
+.resume-text-block ul {
+  padding-left: 0.75rem !important;
+}
